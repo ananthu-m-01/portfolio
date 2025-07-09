@@ -1,0 +1,27 @@
+.home h2{
+    font-size: 90px;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+}
+.home h2 span{
+    background:linear-gradient(250deg,#f3ff6f 0.36%,#f89234 102.06%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact-options{
+    text-align: center;
+}
+.icons{
+    width:30px;
+}
+.icons-list{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.icons-list li{
+    list-style-type: none;
+}

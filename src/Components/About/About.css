@@ -1,0 +1,39 @@
+.about-me{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.about-button{
+    display: flex;
+    gap: 30px;
+}
+.profile-image{
+    width: 600px;
+}
+.about-text{
+    margin: 10px;
+}
+.contact-me{
+    width: 100px;
+    text-align: center;
+    border: none;
+    padding: 5px;
+    border-radius: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid #f1db35;
+}
+.my-resume{
+    width: 100px;
+    text-align: center;
+    border: 1px solid #f1db35;
+    padding: 5px;
+    border-radius:25px;
+    cursor: pointer;
+}
+.my-resume:hover{
+    background:linear-gradient(250deg,#f3ff6f 0.36%,#ffa653 102.06%);
+}
+.contact-me:hover{
+    background:linear-gradient(250deg,#f3ff6f 0.36%,#ffa653 102.06%);
+}
