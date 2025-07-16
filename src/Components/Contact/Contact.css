@@ -1,64 +1,144 @@
-.contact-ananthu{
+.contact-ananthu {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.contact-text {
+  padding: 15px;
+  width: 500px;
+  text-align: left;
+}
+
+.contact-form {
+  width: 500px;
+  border: 1px solid grey;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+.contact-logo {
+  width: 20px;
+}
+
+.contact-text .links {
+  font-size: 13px;
+}
+
+.links {
+  display: flex;
+  gap: 15px;
+  padding: 6px;
+  align-items: center;
+}
+
+.contact-links {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.input-class {
+  background-color: #d7d5d5;
+  width: 400px;
+  height: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.input-class::placeholder {
+  color: #808080;
+}
+
+.textarea-class {
+  height: 100px;
+}
+
+.send-btn {
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100px;
+  border-radius: 5px;
+  background: linear-gradient(250deg, #f3ff6f 0.36%, #ffa653 102.06%);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Responsive styles */
+
+@media screen and (max-width: 1024px) {
+  .contact-ananthu {
+    margin: 60px 40px;
+    gap: 60px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .contact-text,
+  .contact-form {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  }
+
+  .contact-text .links {
     justify-content: center;
-    gap:80px;
-    margin: 80px 170px;
-}
-.contact-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  }
+
+  .links {
     justify-content: center;
-    gap: 80px;
+  }
+
+  .input-class {
+    width: 100%;
+  }
 }
-.contact-text{
-    padding: 15px;
-    width:500px;
-    /* border:1px solid grey; */
-    text-align: left;
-}
-.contact-form{
-    width:500px;
-    border:1px solid grey;
-    padding: 15px;
-}
-textarea{
-    resize: none;
-}
-.contact-logo{
-    width: 20px;
-}
-.contact-text .links{
-    font-size: 13px;
-}
-.links{
-    display: flex;
-    gap: 15px;
-    padding: 6px;
-}
-.contact-links{
-    padding: 5px;
-    cursor: pointer;
-}
-.input-class{
-    background-color: #d7d5d5;
-    width: 400px;
-    height: 30px;
-    padding: 10px;
-}
-.input-class::placeholder{
-    color:#808080;
-}
-.textarea-class{
-    height: 100px;
-}
-.send-btn{
-    padding: 5px;
-    box-sizing: border-box;
-    width: 100px;
-    border-radius: 5px;
-    background:linear-gradient(250deg,#f3ff6f 0.36%,#ffa653 102.06%);
-    border: none;
+
+@media screen and (max-width: 480px) {
+  .contact-ananthu {
+    margin: 40px 15px;
+    gap: 40px;
+  }
+
+  .input-class {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .textarea-class {
+    height: 80px;
+  }
+
+  .send-btn {
+    width: 90px;
+  }
+
+  .contact-text .links {
+    font-size: 12px;
+  }
+
+  .contact-logo {
+    width: 18px;
+  }
 }
