@@ -1,33 +1,78 @@
-.education{
-    text-align: center;
-    padding: 0px 30px;
-    margin: 80px 170px;
-    font-size: 20px;
-    justify-content: space-around;
+.education {
+  text-align: center;
+  padding: 0px 30px;
+  margin: 80px 170px;
+  font-size: 20px;
+  justify-content: space-around;
 }
-.education-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+.education-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  justify-content: center;
 }
-.education-card{
-    border:1px solid grey;
-    width: 500px;
-    text-align: center;
-    border-radius: 10px;
-    transition: 0.3s;
+
+.education-card {
+  border: 1px solid grey;
+  width: 500px;
+  max-width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.education-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(231, 255, 145, 0.2), 0 6px 20px 0 rgba(221, 255, 96, 0.19);
+  transform: scale(1.10);
+  transition: 0.3s;
+  border: 1px solid #f1db35;
+}
+
+.education-card h4 {
+  color: #808080;
+}
+
+.education-card p {
+  color: #808080;
+  font-size: 14px;
+}
+
+/* Responsive for tablets */
+@media screen and (max-width: 1024px) {
+  .education {
+    margin: 60px 40px;
+  }
+
+  .education-container {
+    grid-template-columns: 1fr; /* single column for tablets */
+    gap: 20px;
+  }
+
+  .education-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 12px;
+  }
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 600px) {
+  .education {
+    margin: 40px 15px;
+    font-size: 18px;
+    padding: 0 15px;
+  }
+
+  .education-card {
+    max-width: 100%;
     padding: 10px;
-    margin-top:10px;
-}
-.education-card:hover{
-    box-shadow: 0 4px 8px 0 rgba(231, 255, 145, 0.2), 0 6px 20px 0 rgba(221, 255, 96, 0.19);
-    transform: scale(1.10);
-    transition: 0.3s;
-    border:1px solid #f1db35;
-}
-.education-card h4{
-    color: #808080;
-}
-.education-card p{
-    color: #808080;
-    font-size: 14px;
+  }
+
+  .education-card p {
+    font-size: 13px;
+  }
 }
