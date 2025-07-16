@@ -1,6 +1,4 @@
-import React from 'react'
 import EmailLogo from '../../assets/email2.png'
-import InstagramLogo from '../../assets/instagram.png'
 import whatsappLogo from '../../assets/whatsapp2.png'
 import './Contact.css'
 function Contact() {
@@ -38,9 +36,6 @@ function Contact() {
           <div className="contact-links">
             <div className="links">
               <img src={EmailLogo} alt="" className='contact-logo' /><p>@ananthu.m.utr@gmail.com</p>
-            </div>
-            <div className="links">
-            <img src={InstagramLogo} alt="" className='contact-logo' /><p>@anandhuleo_</p>
             </div>
             <div className="links">
               <img src={whatsappLogo} alt="" className='contact-logo' /><p>+91 6238727094</p>

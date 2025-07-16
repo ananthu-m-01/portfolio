@@ -1,5 +1,3 @@
-import React from 'react'
-import emailLogo from '../../assets/envelope.png'
 import githubLogo from '../../assets/githubnew.png'
 import './Home.css'
 function Home() {
@@ -9,8 +7,12 @@ function Home() {
       <br />Fullstack Software Developer</h2>
       <div className="contact-options">
         <ul className='icons-list'>
-          <li><img src={githubLogo} alt=""  className='icons'/></li>
-          <li><img src={emailLogo} alt=""  className='icons'/></li>
+          
+              <li>
+                <a href="https://github.com/ananthu-m-01" target="_blank" rel="noopener noreferrer">
+                <img src={githubLogo} alt="GitHub" className='icons' />
+                </a>
+              </li>
         </ul>
       </div>
     </div>

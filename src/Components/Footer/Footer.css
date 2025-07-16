@@ -1,4 +1,9 @@
-.credits{
-    color: #747474;
-    text-align: center;
+.footer {
+  color: #747474;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 14px;
+  background-color: #121212; /* dark background to fit your portfolio's style */
+  border-top: 1px solid #444;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
